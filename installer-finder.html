@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find an Installer - ChargeHome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-bolt logo-icon"></i> <span>ChargeHome</span></a>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home-creative.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="installer-finder.html" class="nav-link active">Installer Finder</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="mobile-nav-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="py-12 bg-surface-2 text-center">
+        <div class="container">
+            <h1 class="mb-4">Find a Certified Installer</h1>
+            <p class="text-muted mb-8">Locate trusted professionals in your area to install your EV charger safely.</p>
+
+            <div class="search-bar bg-surface p-2 rounded-lg shadow-sm border border-border mx-auto max-w-xl">
+                <input type="text" placeholder="Enter City or Zip Code"
+                    class="w-full p-3 bg-transparent border-none outline-none">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-12">
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Installer 1 -->
+            <div class="card installer-card">
+                <img src="https://ui-avatars.com/api/?name=John+Doe&background=0D8ABC&color=fff" alt="Installer"
+                    class="installer-avatar">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg">Spark Electric Solutions</h3>
+                            <p class="text-sm text-muted">San Francisco, CA</p>
+                        </div>
+                        <div class="flex items-center text-accent">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 font-bold">4.9</span>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-2 mb-3">Certified Tesla & ChargePoint installer with 10+ years of residential
+                        experience.</p>
+                    <div class="flex gap-2">
+                        <a href="installer-profile.html?installer=spark-electric"
+                            class="btn btn-secondary text-sm py-2 px-4">View Profile</a>
+                        <a href="installer-profile.html?installer=spark-electric&action=contact"
+                            class="btn btn-primary text-sm py-2 px-4">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installer 2 -->
+            <div class="card installer-card">
+                <img src="https://ui-avatars.com/api/?name=Green+Volts&background=10B981&color=fff" alt="Installer"
+                    class="installer-avatar">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg">GreenVolts Energy</h3>
+                            <p class="text-sm text-muted">Oakland, CA</p>
+                        </div>
+                        <div class="flex items-center text-accent">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 font-bold">4.8</span>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-2 mb-3">Specialists in solar integration and smart home EV charging setups.</p>
+                    <div class="flex gap-2">
+                        <a href="installer-profile.html?installer=greenvolts"
+                            class="btn btn-secondary text-sm py-2 px-4">View Profile</a>
+                        <a href="installer-profile.html?installer=greenvolts&action=contact"
+                            class="btn btn-primary text-sm py-2 px-4">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installer 3 -->
+            <div class="card installer-card">
+                <img src="https://ui-avatars.com/api/?name=Mike+Smith&background=F59E0B&color=fff" alt="Installer"
+                    class="installer-avatar">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg">Rapid Installers Inc.</h3>
+                            <p class="text-sm text-muted">San Jose, CA</p>
+                        </div>
+                        <div class="flex items-center text-accent">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 font-bold">4.7</span>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-2 mb-3">Fast and reliable service for all major EV charger brands.</p>
+                    <div class="flex gap-2">
+                        <a href="installer-profile.html?installer=rapid-installers"
+                            class="btn btn-secondary text-sm py-2 px-4">View Profile</a>
+                        <a href="installer-profile.html?installer=rapid-installers&action=contact"
+                            class="btn btn-primary text-sm py-2 px-4">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installer 4 -->
+            <div class="card installer-card">
+                <img src="https://ui-avatars.com/api/?name=Next+Gen&background=6366F1&color=fff" alt="Installer"
+                    class="installer-avatar">
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg">NextGen Electrical</h3>
+                            <p class="text-sm text-muted">Fremont, CA</p>
+                        </div>
+                        <div class="flex items-center text-accent">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 font-bold">5.0</span>
+                        </div>
+                    </div>
+                    <p class="text-sm mt-2 mb-3">Premium installation services including panel upgrades.</p>
+                    <div class="flex gap-2">
+                        <a href="installer-profile.html?installer=nextgen-electrical"
+                            class="btn btn-secondary text-sm py-2 px-4">View Profile</a>
+                        <a href="installer-profile.html?installer=nextgen-electrical&action=contact"
+                            class="btn btn-primary text-sm py-2 px-4">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt logo-icon"></i>
+                        <span>ChargeHome</span>
+                    </a>
+                    <p>Empowering your journey with sustainable, smart, and reliable home charging solutions.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home 1</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="installer-finder.html" class="footer-link">Installers</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 000-EVGO</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@chargehome.com</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, USA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChargeHome. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="footer-link text-sm">Sitemap</a>
+                    <a href="#" class="footer-link text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

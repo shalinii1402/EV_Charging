@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChargeHome - Future of Energy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Specific overrides for Creative Home */
+        .hero-creative {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-creative h1 {
+            font-size: 4rem;
+            letter-spacing: -2px;
+            margin-bottom: 2rem;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Same as Index) -->
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-bolt logo-icon"></i>
+                <span>ChargeHome</span>
+            </a>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home-creative.html" class="nav-link active">Home 2</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="installer-finder.html" class="nav-link">Installer Finder</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="mobile-nav-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Creative Hero -->
+    <section class="hero hero-creative">
+        <img src="assets/images/hero-creative.png" alt="Future Charging" class="hero-bg-img">
+        <div class="hero-overlay" style="background: rgba(0,0,0,0.6);"></div>
+        <div class="container hero-content animate-fade-in" style="max-width: 800px;">
+            <p class="text-primary font-bold tracking-widest uppercase mb-4">The Future is Electric</p>
+            <h1>Powering the Next Generation of Mobility.</h1>
+            <p class="hero-subtitle mb-8">Seamless integration between your home, your car, and your life.</p>
+            <a href="products.html" class="btn btn-primary rounded-full px-8 py-4">Explore Technology</a>
+        </div>
+    </section>
+
+    <!-- Lifestyle / Storytelling -->
+    <section class="py-20 bg-surface">
+        <div class="container grid grid-cols-2 items-center gap-12">
+            <div>
+                <h2 class="mb-6">Intelligent Energy.<br>Designed for You.</h2>
+                <p class="text-muted mb-6">Our charging solutions aren't just hardware; they are intelligent nodes in
+                    your smart home ecosystem. Monitor consumption, schedule charges for off-peak hours, and integrate
+                    with solar arrays seamlessly.</p>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-primary"></i> <span>Smart App Control</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-primary"></i> <span>Solar Integration Ready</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-check-circle text-primary"></i> <span>Voice Assistant Compatible</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card">
+                <img src="assets/images/smart-app.png" alt="Smart App Interface" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-20">
+        <div class="container">
+            <h2 class="text-center mb-16">Why Home Charging Wins</h2>
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Public Charging Card -->
+                <div
+                    class="p-8 border border-border rounded-xl bg-surface hover:border-primary transition duration-300 text-center">
+                    <div class="flex flex-col items-center gap-4 mb-6">
+                        <div
+                            class="w-16 h-16 bg-surface-2 rounded-full flex items-center justify-center text-muted text-2xl">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Public Charging</h3>
+                    </div>
+                    <ul class="text-muted space-y-4 inline-block text-left">
+                        <li class="flex items-center gap-3"><i class="fas fa-times text-red-500"></i> Unpredictable
+                            availability</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-times text-red-500"></i> High cost per kWh
+                        </li>
+                        <li class="flex items-center gap-3"><i class="fas fa-times text-red-500"></i> Time wasted
+                            waiting</li>
+                    </ul>
+                </div>
+
+                <!-- Home Charging Card -->
+                <div class="p-8 border border-primary rounded-xl bg-surface shadow-lg text-center">
+                    <div class="flex flex-col items-center gap-4 mb-6">
+                        <div
+                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Home Charging</h3>
+                    </div>
+                    <ul class="text-muted space-y-4 inline-block text-left">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Always available,
+                            24/7</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Cheapest
+                            electricity rates</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Wake up fully
+                            charged</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="py-20 bg-surface-2">
+        <div class="container text-center max-w-4xl">
+            <div class="flex flex-col items-center gap-6">
+                <img src="assets/images/sustainability.png" alt="Sustainability Technology"
+                    class="rounded-lg shadow-lg mb-4" style="max-height: 300px; width: auto;">
+                <h2 class="mb-4">Driving Towards a Net-Zero Future</h2>
+                <p class="text-muted mb-8 text-lg">Every charge at home reduces the strain on the commercial grid and
+                    optimizes energy usage. Join thousands of homeowners making a tangible difference.</p>
+                <a href="signup.html" class="btn btn-primary">Join the Movement</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 bg-surface text-center relative overflow-hidden">
+        <div class="container relative z-10 max-w-2xl mx-auto">
+            <h2 class="mb-6 text-5xl font-bold section-title" style="color: var(--text-main); border: none;">Ready to
+                Evolve?</h2>
+            <p class="text-xl mb-10" style="color: var(--text-muted);">Upgrade your home with the smartest, most
+                efficient charging solution on the market today.</p>
+            <div class="flex flex-row gap-6 justify-center items-center flex-wrap">
+                <a href="products.html"
+                    class="btn btn-primary px-10 py-4 text-lg rounded-xl inline-flex items-center justify-center"
+                    style="background: var(--primary); color: white; border: 2px solid var(--primary); font-weight: 600; min-width: 240px; height: 60px; white-space: nowrap;">Shop
+                    Chargers</a>
+                <a href="installer-finder.html"
+                    class="btn btn-outline px-10 py-4 text-lg rounded-xl inline-flex items-center justify-center"
+                    style="background: transparent; border: 2px solid var(--text-main); color: var(--text-main); font-weight: 600; min-width: 240px; height: 60px; white-space: nowrap;">Find
+                    an Installer</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt logo-icon"></i>
+                        <span>ChargeHome</span>
+                    </a>
+                    <p>Empowering your journey with sustainable, smart, and reliable home charging solutions.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home 1</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="installer-finder.html" class="footer-link">Installers</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 000-EVGO</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@chargehome.com</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, USA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChargeHome. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="footer-link text-sm">Sitemap</a>
+                    <a href="#" class="footer-link text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

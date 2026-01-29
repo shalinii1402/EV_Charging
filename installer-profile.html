@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installer Profile - ChargeHome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-bolt logo-icon"></i> <span>ChargeHome</span></a>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home 1</a>
+                <a href="home-creative.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="installer-finder.html" class="nav-link active">Installer Finder</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="mobile-nav-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container py-12">
+        <div class="grid grid-cols-2 gap-12 items-start">
+            <!-- Left Side: Basic Info & Description -->
+            <div>
+                <div class="flex items-center gap-6 mb-8">
+                    <img src="" alt="" id="installer-image" class="w-24 h-24 rounded-full shadow-lg">
+                    <div>
+                        <h1 class="mb-1" id="installer-name">Installer Name</h1>
+                        <p class="text-muted flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-primary"></i> <span
+                                id="installer-location">Location</span>
+                        </p>
+                        <div class="flex items-center text-accent mt-2">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 font-bold" id="installer-rating">0.0</span>
+                            <span class="text-muted text-sm ml-2">(Verified Installer)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mb-4">About the Company</h3>
+                <p class="text-muted mb-8" id="installer-description">Description goes here.</p>
+
+                <h3 class="mb-4">Services Offered</h3>
+                <ul class="grid grid-cols-2 gap-4 mb-8" id="installer-services">
+                    <!-- Services will be loaded here -->
+                </ul>
+            </div>
+
+            <!-- Right Side: Contact & Reviews -->
+            <div class="space-y-8">
+                <!-- Contact Card -->
+                <div class="card p-8 bg-surface-2 border-primary" id="contact-section">
+                    <h3 class="mb-6">Contact Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-muted uppercase font-bold">Phone</p>
+                                <p class="font-medium" id="installer-phone">Phone Number</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-muted uppercase font-bold">Email</p>
+                                <p class="font-medium" id="installer-email">Email Address</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-muted uppercase font-bold">Website</p>
+                                <p class="font-medium" id="installer-website">Website URL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-full mt-8">Request Quote</button>
+                </div>
+
+                <!-- Recent Reviews -->
+                <div>
+                    <h3 class="mb-6">Customer Reviews</h3>
+                    <div class="space-y-4" id="installer-reviews">
+                        <!-- Reviews will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="container mb-12 flex justify-start">
+        <a href="installer-finder.html" class="btn btn-secondary">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Finder
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-bolt logo-icon"></i>
+                        <span>ChargeHome</span>
+                    </a>
+                    <p>Empowering your journey with sustainable, smart, and reliable home charging solutions.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home 1</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="installer-finder.html" class="footer-link">Installers</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 000-EVGO</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@chargehome.com</span>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, USA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChargeHome. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="footer-link text-sm">Sitemap</a>
+                    <a href="#" class="footer-link text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
