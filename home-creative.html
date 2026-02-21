@@ -84,7 +84,8 @@
     <section class="hero hero-creative">
         <img src="assets/images/hero-creative.png" alt="Future Charging" class="hero-bg-img">
         <div class="hero-overlay" style="background: rgba(0,0,0,0.6);"></div>
-        <div class="container hero-content animate-fade-in" style="max-width: 800px;">
+        <div class="container hero-content animate-fade-in"
+            style="max-width: 800px; text-align: center; display: flex; flex-direction: column; align-items: center;">
             <p class="text-primary font-bold tracking-widest uppercase mb-4">The Future is Electric</p>
             <h1>Powering the Next Generation of Mobility.</h1>
             <p class="hero-subtitle mb-12">Seamless integration between your home, your car, and your life.</p>
@@ -122,7 +123,7 @@
     <section class="py-20">
         <div class="container">
             <h2 class="text-center mb-16">Why Home Charging Wins</h2>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid gap-8" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                 <!-- Public Charging Card -->
                 <div
                     class="p-8 border border-border rounded-xl bg-surface hover:border-primary transition duration-300 text-center">
@@ -133,13 +134,20 @@
                         </div>
                         <h3 class="text-2xl font-bold">Public Charging</h3>
                     </div>
-                    <ul class="text-muted space-y-4 inline-block text-left">
-                        <li class="flex items-center gap-3"><i class="fas fa-times text-red"></i> Unpredictable
-                            availability</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-times text-red"></i> High cost per kWh
-                        </li>
-                        <li class="flex items-center gap-3"><i class="fas fa-times text-red"></i> Time wasted
-                            waiting</li>
+                    <ul
+                        style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:1rem; width:fit-content; margin-left:auto; margin-right:auto;">
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-times fa-fw"
+                                style="color:#e74c3c; width:1.25em; text-align:center; flex-shrink:0;"></i><span>Unpredictable
+                                availability</span></li>
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-times fa-fw"
+                                style="color:#e74c3c; width:1.25em; text-align:center; flex-shrink:0;"></i><span>High
+                                cost per kWh</span></li>
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-times fa-fw"
+                                style="color:#e74c3c; width:1.25em; text-align:center; flex-shrink:0;"></i><span>Time
+                                wasted waiting</span></li>
                     </ul>
                 </div>
 
@@ -152,13 +160,20 @@
                         </div>
                         <h3 class="text-2xl font-bold">Home Charging</h3>
                     </div>
-                    <ul class="text-muted space-y-4 inline-block text-left">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Always available,
-                            24/7</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Cheapest
-                            electricity rates</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-primary"></i> Wake up fully
-                            charged</li>
+                    <ul
+                        style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:1rem; width:fit-content; margin-left:auto; margin-right:auto;">
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-check fa-fw"
+                                style="color:var(--primary); width:1.25em; text-align:center; flex-shrink:0;"></i><span>Always
+                                available, 24/7</span></li>
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-check fa-fw"
+                                style="color:var(--primary); width:1.25em; text-align:center; flex-shrink:0;"></i><span>Cheapest
+                                electricity rates</span></li>
+                        <li style="display:flex; align-items:center; gap:0.6rem; white-space:nowrap;"><i
+                                class="fas fa-check fa-fw"
+                                style="color:var(--primary); width:1.25em; text-align:center; flex-shrink:0;"></i><span>Wake
+                                up fully charged</span></li>
                     </ul>
                 </div>
             </div>
